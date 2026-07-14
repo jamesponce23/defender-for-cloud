@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+# NOTE: .terraform.lock.hcl is intentionally NOT ignored — commit it to pin provider versions.
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Secrets / local env
+.env
+*.env

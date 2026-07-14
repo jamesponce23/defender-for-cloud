@@ -1,0 +1,18 @@
+# Copy to terraform.tfvars (gitignored) and fill in real values.
+
+security_contact_email = "you@example.com"
+# security_contact_phone = "+1-555-555-5555"
+
+# All plans default to "Free" in variables.tf — override here only once you
+# actually have a matching resource type deployed. Example, once you have a
+# VM to protect:
+# defender_plans = {
+#   VirtualMachines = "Standard"
+#   AppServices     = "Free"
+#   SqlServers      = "Free"
+#   StorageAccounts = "Free"
+#   KeyVaults       = "Free"
+#   Containers      = "Free"
+#   Arm             = "Free"
+#   Dns             = "Free"
+# }
