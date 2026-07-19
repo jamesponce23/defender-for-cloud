@@ -1,0 +1,4 @@
+# Copy to backend.hcl (gitignored), fill in your real values, then run:
+#   terraform init -backend-config=backend.hcl
+resource_group_name  = "<your-tfstate-resource-group>"
+storage_account_name = "<your-tfstate-storage-account>"

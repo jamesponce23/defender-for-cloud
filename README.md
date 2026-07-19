@@ -47,6 +47,7 @@ defender_plans.tf         azurerm_security_center_subscription_pricing, one per 
 security_contact.tf       azurerm_security_center_contact (free, just routes alert emails)
 outputs.tf                 current tier per plan, for a quick drift check
 terraform.tfvars.example   template
+backend.hcl.example        remote-backend config template (rg + state account)
 ```
 
 ## Backend
@@ -73,7 +74,8 @@ PIM-for-Groups requirement).
 
 ```bash
 cp terraform.tfvars.example terraform.tfvars   # fill in your email
-terraform init
+cp backend.hcl.example backend.hcl             # fill in your state account — backend.hcl is gitignored
+terraform init -backend-config=backend.hcl
 terraform plan     # confirm everything stays at $0 / Free before applying
 terraform apply
 ```

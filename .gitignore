@@ -17,3 +17,6 @@ terraform.rc
 # Secrets / local env
 .env
 *.env
+
+# Local backend config (state account name) — commit backend.hcl.example instead
+backend.hcl
