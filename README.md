@@ -56,7 +56,7 @@ Remote state lives in the same Azure Storage account as
 collide:
 
 ```
-storage account: <your-tfstate-storage-account>
+storage account: <set in backend config>
 container:       tfstate
 key:             defender-for-cloud.tfstate
 ```
